@@ -15,13 +15,13 @@ function play(name){
     if(name === computer){
         document.getElementById('result').innerHTML = "Tie"
     }else if(name === rock && computer === scissor){
-        document.getElementById('result').innerHTML = "You Won,  Computer pick: " + computer
+        document.getElementById('result').innerHTML = "You Won,  Computer pick: " + `<b class="computer">${ computer}</b>`
     }else if(name === paper && computer === rock){
-        document.getElementById('result').innerHTML = "You Won,  Computer pick: " + computer
+        document.getElementById('result').innerHTML = "You Won,  Computer pick: " + `<b class="computer">${ computer}</b>`
     }else if(name === scissor && computer === paper){
-        document.getElementById('result').innerHTML = "You Won,  Computer pick: " + computer
+        document.getElementById('result').innerHTML = "You Won,  Computer pick: " + `<b class="computer">${ computer}</b>`
     }else{
-        document.getElementById('result').innerHTML = "You Lose,  Computer pick: " + computer
+        document.getElementById('result').innerHTML = "You Lose,  Computer pick: " + `<b class="computer">${ computer}</b>`
     }
 
 }
